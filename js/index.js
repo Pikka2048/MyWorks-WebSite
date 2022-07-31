@@ -14,6 +14,14 @@ function load(filedir) {
     xhr.send();
 }
 function blog_post() {
+    var user = document.createElement('p');
+    user.textContent = "@Pikka";
+    user.className='posts-meta'
+
+    var date = document.createElement('p');
+    date.textContent = "2022年7月31日";
+    date.className='posts-meta'
+
     var elem = document.createElement('h2');
     elem.textContent = "🔍 React使ってみた!";
 
@@ -23,6 +31,8 @@ function blog_post() {
     var parent = document.getElementById('posts-list');
 
     // 要素を追加
+    parent.appendChild(user);
+    parent.appendChild(date);
     parent.appendChild(elem);
     parent.appendChild(tag);
 }
