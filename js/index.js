@@ -21,10 +21,12 @@ function exit_blog_page() {
     while (parent.firstChild) {
         parent.removeChild(parent.firstChild);
     }
+    parent.style.visibility = "hidden";
 }
 function blog_post() {
     var parent = document.getElementById('posts-list');
     exit_blog_page();
+    parent.style.visibility = "visible";
 
     var user = document.createElement('p');
     user.textContent = "@Pikka";
