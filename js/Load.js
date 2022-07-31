@@ -25,3 +25,6 @@ document.getElementById("about").onclick = function () {
 document.getElementById("github").onclick = function () {
     
 }
+window.onload = function(){
+    load("home.html");
+}

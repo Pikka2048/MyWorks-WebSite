@@ -15,7 +15,8 @@ fs.readFile(filePath, { encoding: "utf8" }, (err, file) => {
     // MarkdownファイルをHTML文字列に変換する
     const html = marked.parse(file);
     console.log(html);
-    fs.writeFile('../../page/about.html', html,function(err, result) {
-        if(err) console.log('error', err);
-});
+    const filename = filePath.slice(0, filePath.length - 3);
+    fs.writeFile("../../pages/" + filename + ".html", html, function (err, result) {
+        if (err) console.log('error', err);
+    });
 });
