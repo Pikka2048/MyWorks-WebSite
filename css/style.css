@@ -1,13 +1,13 @@
 body {
-    background-color: #F0F0F0;
+    background-color: #ededed;
     margin: 0;
     padding: 0;
     font-family: "Helvetica Neue",
-    Arial,
-    "Hiragino Kaku Gothic ProN",
-    "Hiragino Sans",
-    Meiryo,
-    sans-serif;
+        Arial,
+        "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans",
+        Meiryo,
+        sans-serif;
 }
 
 a {
@@ -76,6 +76,13 @@ header .headline {
     color: #464545;
     display: inline-block;
     text-align: left;
+}
+
+#posts-list {
+    background-color: #ffffff71;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 500px;
 }
 
 .container {

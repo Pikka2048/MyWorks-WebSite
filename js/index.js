@@ -13,21 +13,36 @@ function load(filedir) {
     };
     xhr.send();
 }
+function blog_post() {
+    // 要素を作成
+    var elem = document.createElement('div');
+    
+    elem.textContent = "React使ってみた！";
+
+    // 親要素を取得
+    var parent = document.getElementById('posts-list');
+    console.log(parent);
+
+    // 要素を追加
+    parent.appendChild(elem);
+}
+function blog_main() {
+    blog_post();
+}
 document.getElementById("home").onclick = function () {
     load("home.html");
     history.pushState(null, null, "home");
 }
 document.getElementById("blog").onclick = function () {
     load("blog.html");
+    blog_main();
     history.pushState(null, null, "blog");
 }
 document.getElementById("about").onclick = function () {
     load("about.html");
     history.pushState(null, null, "about");
 }
-document.getElementById("github").onclick = function () {
-    
-}
-window.onload = function(){
+
+window.onload = function () {
     load("home.html");
 }
