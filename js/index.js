@@ -1,4 +1,5 @@
 function load(filedir) {
+    exit_blog_page();
     var xhr = new XMLHttpRequest(),
         method = "GET",
         url = "pages/" + filedir;
@@ -13,22 +14,31 @@ function load(filedir) {
     };
     xhr.send();
 }
+
+//ブログから他ページに推移するときに呼び出すこと
+function exit_blog_page() {
+    var parent = document.getElementById('posts-list');
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+    }
+}
 function blog_post() {
+    var parent = document.getElementById('posts-list');
+    exit_blog_page();
+
     var user = document.createElement('p');
     user.textContent = "@Pikka";
-    user.className='posts-meta'
+    user.className = 'posts-meta'
 
     var date = document.createElement('p');
     date.textContent = "2022年7月31日";
-    date.className='posts-meta'
+    date.className = 'posts-meta'
 
     var elem = document.createElement('h2');
     elem.textContent = "🔍 React使ってみた!";
 
     var tag = document.createElement('p');
     tag.textContent = "🏷 React, Javascript, Devops";
-
-    var parent = document.getElementById('posts-list');
 
     // 要素を追加
     parent.appendChild(user);
