@@ -1,11 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     background-color: #F0F0F0;
     font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -57,6 +54,7 @@ a:visited {
 }
 
 header {
+
     width: 100%;
     padding: 5px 0;
     margin: 0 auto;
@@ -66,4 +64,14 @@ header {
 
 header .headline {
     font-size: 32px;
+}
+
+#content {
+    color: #464545;
+    display: inline-block;
+    text-align: left;
+}
+
+.container {
+    text-align: center;
 }
