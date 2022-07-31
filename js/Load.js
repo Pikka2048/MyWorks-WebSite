@@ -15,12 +15,15 @@ function load(filedir) {
 }
 document.getElementById("home").onclick = function () {
     load("home.html");
+    history.pushState(null, null, "/");
 }
 document.getElementById("blog").onclick = function () {
     load("blog.html");
+    history.pushState(null, null, "blog");
 }
 document.getElementById("about").onclick = function () {
     load("about.html");
+    history.pushState(null, null, "about");
 }
 document.getElementById("github").onclick = function () {
     
