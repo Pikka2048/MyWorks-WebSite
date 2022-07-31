@@ -15,7 +15,7 @@ function load(filedir) {
 }
 document.getElementById("home").onclick = function () {
     load("home.html");
-    history.pushState(null, null, "/");
+    history.pushState(null, null, "home");
 }
 document.getElementById("blog").onclick = function () {
     load("blog.html");
