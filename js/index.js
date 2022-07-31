@@ -14,17 +14,17 @@ function load(filedir) {
     xhr.send();
 }
 function blog_post() {
-    // 要素を作成
-    var elem = document.createElement('div');
-    
-    elem.textContent = "React使ってみた！";
+    var elem = document.createElement('h2');
+    elem.textContent = "🔍 React使ってみた!";
 
-    // 親要素を取得
+    var tag = document.createElement('p');
+    tag.textContent = "🏷 React, Javascript, Devops";
+
     var parent = document.getElementById('posts-list');
-    console.log(parent);
 
     // 要素を追加
     parent.appendChild(elem);
+    parent.appendChild(tag);
 }
 function blog_main() {
     blog_post();

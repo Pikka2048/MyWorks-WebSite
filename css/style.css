@@ -1,5 +1,5 @@
 body {
-    background-color: #ededed;
+    background-color: #eeeeee;
     margin: 0;
     padding: 0;
     font-family: "Helvetica Neue",
@@ -83,6 +83,12 @@ header .headline {
     width: 80%;
     margin: 0 auto;
     max-width: 500px;
+}
+
+#posts-list:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .05);
 }
 
 .container {
