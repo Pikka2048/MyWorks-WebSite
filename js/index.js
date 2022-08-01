@@ -23,24 +23,35 @@ function exit_blog_page() {
     }
     parent.style.visibility = "hidden";
 }
-function blog_post() {
+function blog_post(username, postdate, title, tags, id) {
     var parent = document.getElementById('posts-list');
-    exit_blog_page();
+
     parent.style.visibility = "visible";
 
+    //Create Post Root by id 
+    var div = document.createElement('div');
+    div.id = id;
+    div.className = "post";
+    div.onclick = function(){
+        alert(this.id);
+    };
+
+    parent.appendChild(div);
+    parent = div;
+
     var user = document.createElement('p');
-    user.textContent = "@Pikka";
+    user.textContent = username;
     user.className = 'posts-meta'
 
     var date = document.createElement('p');
-    date.textContent = "2022年7月31日";
+    date.textContent = postdate;
     date.className = 'posts-meta'
 
     var elem = document.createElement('h2');
-    elem.textContent = "🔍 React使ってみた!";
+    elem.textContent = title;
 
     var tag = document.createElement('p');
-    tag.textContent = "🏷 React, Javascript, Devops";
+    tag.textContent = tags;
 
     // 要素を追加
     parent.appendChild(user);
@@ -49,7 +60,8 @@ function blog_post() {
     parent.appendChild(tag);
 }
 function blog_main() {
-    blog_post();
+    blog_post("@Pikka", "2021年7月31日", "React使ってみた", "React",1);
+    blog_post("@Pikka", "2021年7月32日", "Vue使ってみた", "Vue",2);
 }
 document.getElementById("home").onclick = function () {
     load("home.html");
