@@ -1,4 +1,4 @@
-function load(filedir, abs=false) {
+function load(filedir, abs = false) {
     exit_blog_page();
 
     if (abs) {
@@ -41,8 +41,9 @@ function blog_post(username, postdate, title, tags, id) {
     div.className = "post";
     div.onclick = function () {
         exit_blog_page();
-        load("post1.html");
-        history.pushState(null, null, "blog/1");
+        page_id = this.id;
+        load("post" + page_id + ".html");
+        history.pushState(null, null, "blog/" + page_id);
     };
 
     parent.appendChild(div);
