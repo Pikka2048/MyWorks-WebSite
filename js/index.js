@@ -102,6 +102,7 @@ window.onload = function () {
         root_path = "http://" + location.hostname + ":" + location.port;
         is_run_github = false;
     }
+    is_run_github ? path = "/7492WebSite" : path = "";
     history.pushState(null, null, path + "/home");
     load("home.html");
 }
