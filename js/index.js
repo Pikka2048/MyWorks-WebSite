@@ -1,12 +1,10 @@
-function load(filename, abs = false) {
+
+function load(filename) {
     QuitBlogPage()
-    if (location.hostname.match("github.io")) {
-        var root_path = "https://" + location.hostname;
-    }
-    else {
-        var root_path = "http://" + location.hostname + ":" + location.port;
-    }
+
     var url = root_path + "/pages/" + filename;
+    console.log(url)
+    console.log(root_path)
 
     var xhr = new XMLHttpRequest(),
         method = "GET",
@@ -44,7 +42,8 @@ function CreateBlogPostElements(user, date, title, tags, id) {
         QuitBlogPage();
         page_id = this.id;
         load("post" + page_id + ".html");
-        history.pushState(null, null, "blog/" + page_id);
+        is_run_github ? path = "/7492WebSite" : path = "";
+        history.pushState(null, null, path + "/blog/" + page_id);
     };
 
     parent.appendChild(div);
@@ -76,18 +75,30 @@ function GoBlogPage() {
 }
 document.getElementById("home").onclick = function () {
     load("home.html", true);
-    history.pushState(null, null, "/home");
+    is_run_github ? path = "/7492WebSite" : path = "";
+    history.pushState(null, null, path + "/home");
 }
 document.getElementById("blog").onclick = function () {
     load("blog.html", true);
     GoBlogPage();
-    history.pushState(null, null, "/blog");
+    is_run_github ? path = "/7492WebSite" : path = "";
+    history.pushState(null, null, path + "/blog");
 }
 document.getElementById("about").onclick = function () {
     load("about.html", true);
-    history.pushState(null, null, "/about");
+    is_run_github ? path = "/7492WebSite" : path = "";
+    history.pushState(null, null, path + "/about");
 }
 
 window.onload = function () {
+    if (location.hostname.match("github.io")) {
+        console.log("run in github io");
+        is_run_github = true;
+        root_path = "https://" + location.hostname + "/" + "7492WebSite";
+    }
+    else {
+        root_path = "http://" + location.hostname + ":" + location.port;
+        is_run_github = false;
+    }
     load("home.html");
 }
