@@ -1,0 +1,228 @@
+[33mcommit 4890508d1d885c820983fe7a90a33d709aa017d9[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Mon Aug 1 22:24:00 2022 +0900
+
+    Update href is open new tab
+
+[33mcommit 3301a4c45474aa813b31d40f7bb576f1f3b456ca[m
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Mon Aug 1 15:32:02 2022 +0900
+
+    Debug GithubPage(8)
+
+[33mcommit 094214c225bade25df99b0b8265ed8c08970243c[m
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Mon Aug 1 15:29:13 2022 +0900
+
+    Debug GithubPage(7)
+
+[33mcommit 68c369c2c393ffbd977b8082274288d7cb7a49f6[m
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Mon Aug 1 15:27:22 2022 +0900
+
+    Debug GithubPage(6)
+
+[33mcommit 9034415cc6afcd9f1ff63ae1efd1f6c05155e546[m
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Mon Aug 1 15:18:11 2022 +0900
+
+    Debug GithubPage(5)
+
+[33mcommit 0b4881d550caef4879cc40252ef77ac8128e6b72[m
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Mon Aug 1 15:08:06 2022 +0900
+
+    Debug GithubPage(4)
+
+[33mcommit fb398d2e7f01f6908688eec88d41f99c215d0ace[m
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Mon Aug 1 15:00:50 2022 +0900
+
+    Debug GithubPages(3)
+
+[33mcommit 5fa6f7a6bae625164a06b9c25473337ee85bb9a7[m
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Mon Aug 1 14:48:20 2022 +0900
+
+    Debug GithubPage(2)
+
+[33mcommit 7e823425262cf8d19439ecaba0cf5e9a2da51cd5[m
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Mon Aug 1 14:44:36 2022 +0900
+
+    Debug GithubPages(1)
+
+[33mcommit 1d2296678ce4d1a5c9cdfeba34f1f1d2bd0722c7[m
+Merge: e7a8823 171bcfc
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Mon Aug 1 14:41:46 2022 +0900
+
+    Merge branch 'main' of github.com:Pikka2048/7492WebSite into main
+
+[33mcommit e7a88233d20ffe60b06ea16e97e3a5b885c954e1[m
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Mon Aug 1 14:41:42 2022 +0900
+
+    Fix Github Pages URL error
+
+[33mcommit 171bcfcb51f9c3d5c46a2de4a9966b3f326d9d51[m
+Author: Pikka <61875754+Pikka2048@users.noreply.github.com>
+Date:   Mon Aug 1 14:21:46 2022 +0900
+
+    Delete CNAME
+
+[33mcommit a804f88d73559668c309a33bd10ef62ff380cfc9[m
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Mon Aug 1 14:18:59 2022 +0900
+
+    HotFix miss typo
+
+[33mcommit 7d25884d4f2362e9ea675666bb2f45f7ba63edde[m
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Mon Aug 1 14:18:07 2022 +0900
+
+    Edit Refactoring index.js
+
+[33mcommit f96dd3bf3bef0cc4c234e21fc679c80d8b0a2f6d[m
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Mon Aug 1 14:09:38 2022 +0900
+
+    Update Posts Route by Id
+
+[33mcommit a9a16413ae1a442d72df66a52476317f90cd7592[m
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Mon Aug 1 14:01:32 2022 +0900
+
+    Fix Posts Html Load bug
+
+[33mcommit 05d9a0b2d2cadedcfe92a3b8d46e4be1b4c689ad[m
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Mon Aug 1 13:28:15 2022 +0900
+
+    Fix Multiple Posts Bug
+
+[33mcommit 6ef83f5d90ddb6fc18c88ad225acc4687abc7312[m
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Mon Aug 1 01:50:35 2022 +0900
+
+    HotFix Hide Posts Parts Trash in All except Blog
+
+[33mcommit 5e1db74e921d4ff1639c8b5a79153c7de92c4b15[m
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Mon Aug 1 01:40:59 2022 +0900
+
+    Fix What to do when exiting blogpage
+
+[33mcommit 1a3e80266d84b6369791aca6877a666d98927d5e[m
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Mon Aug 1 01:17:06 2022 +0900
+
+    Update Hover Animation
+
+[33mcommit e73aea2649e88a487c8996a1d592d0f44df4a639[m
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Mon Aug 1 01:11:23 2022 +0900
+
+    Update blog_post() , Add user and date
+
+[33mcommit b47b6afcd2d4104f93aa14a5fe6f94062415d3ca[m
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Mon Aug 1 00:38:10 2022 +0900
+
+    Fix Posts Text Color
+
+[33mcommit 727ac4accf32821473d4a28cb21f1498bae4540f[m
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Mon Aug 1 00:36:36 2022 +0900
+
+    Wip Blog Posts (2)
+
+[33mcommit 78820ed384fd5db9d9e8a4d4a86a10d76090119c[m
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Mon Aug 1 00:26:16 2022 +0900
+
+    Wip Blog Posts
+
+[33mcommit 88c5665e9e36e62f5031d520eafb89f62b3fc079[m
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Sun Jul 31 22:12:01 2022 +0900
+
+    Update Content
+
+[33mcommit 8fef04a132bf2447e5b86b279d660a8c69cb794d[m
+Author: Pikka <61875754+Pikka2048@users.noreply.github.com>
+Date:   Sun Jul 31 21:06:51 2022 +0900
+
+    Create CNAME
+
+[33mcommit 0e6dcf5c429b3f77393761c16a8dea50b2226bfa[m
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Sun Jul 31 20:55:50 2022 +0900
+
+    Update Content
+
+[33mcommit a0a3d6b89bfa913d0e232ac032866eb221e0f98a[m
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Sun Jul 31 20:29:11 2022 +0900
+
+    Fix Ghpage for SPA
+
+[33mcommit 422f4d36adada00a4273c1c376d02d2557ff052f[m
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Sun Jul 31 20:16:58 2022 +0900
+
+    Update not use webfont
+
+[33mcommit 1e121561991730a6ff63f6712098fd3c5f2808c6[m
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Sun Jul 31 20:09:06 2022 +0900
+
+    Fix style and ghpage
+
+[33mcommit 93240a84e25482029c65268bd3d18527eb8560e0[m
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Sun Jul 31 19:50:19 2022 +0900
+
+    add support webpack
+
+[33mcommit 7fdc2653a2f5b28632363756da65b9e0de2abd38[m
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Sun Jul 31 19:37:32 2022 +0900
+
+    Update address bar from page name
+
+[33mcommit 7431241bcab30c02992a1a22a53ae85556455444[m
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Sun Jul 31 19:27:35 2022 +0900
+
+    Add Pages Content (Sample)
+
+[33mcommit ed234f34783a3bb711b3b31fa1082725a4042bee[m
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Sun Jul 31 17:02:20 2022 +0900
+
+    Move Directory
+
+[33mcommit 82f5617dd5298655372b71b92e8471c47dabf79d[m
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Sun Jul 31 16:51:49 2022 +0900
+
+    Add dynamic html load in Load.js
+
+[33mcommit 650ec0ac6c6871e8defcf852df949fe80b760acb[m
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Sun Jul 31 16:51:00 2022 +0900
+
+    Convert markdown by marked node plugin
+
+[33mcommit f4832c16d49c68d59775b5b51ae638953b0ce0db[m
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Sun Jul 31 15:47:25 2022 +0900
+
+    Add Hover Animation
+
+[33mcommit 4a818a1db75f10682e7241ae4c57da7d5c59a34e[m
+Author: Pikka2048 <0312pika0201@gmail.com>
+Date:   Sun Jul 31 15:29:21 2022 +0900
+
+    first commit
