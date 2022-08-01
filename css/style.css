@@ -85,6 +85,8 @@ header .headline {
     color: #464545;
     display: inline-block;
     text-align: left;
+    background-color: #f9f9f9;
+    padding: 10px 10%;
 }
 
 .posts-meta {
