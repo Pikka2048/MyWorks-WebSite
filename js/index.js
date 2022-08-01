@@ -93,12 +93,6 @@ document.getElementById("about").onclick = function () {
 
 
 window.onload = function () {
-    /** 更新される直後の処理 */
-    window.addEventListener('unload', function (e) {
-        console.log("reload");
-        history.pushState(null, null, path + "/home");
-    });
-
     if (location.hostname.match("github.io")) {
         console.log("run in github io");
         is_run_github = true;
@@ -108,5 +102,6 @@ window.onload = function () {
         root_path = "http://" + location.hostname + ":" + location.port;
         is_run_github = false;
     }
+    history.pushState(null, null, path + "/home");
     load("home.html");
 }
