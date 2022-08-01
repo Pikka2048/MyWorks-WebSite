@@ -1,6 +1,12 @@
-function load(filedir, abs = false) {
-    QuitBlogPage();
-    abs ? url = filedir : url = "pages/" + filedir;
+function load(filename, abs = false) {
+    QuitBlogPage()
+    if (location.hostname.match("github.io")) {
+        var root_path = "https://" + location.hostname;
+    }
+    else {
+        var root_path = "http://" + location.hostname + ":" + location.port;
+    }
+    var url = root_path + "/pages/" + filename;
 
     var xhr = new XMLHttpRequest(),
         method = "GET",
@@ -69,16 +75,16 @@ function GoBlogPage() {
     CreateBlogPostElements("@Pikka", "2021年7月32日", "Vue使ってみた", "Vue", 2);
 }
 document.getElementById("home").onclick = function () {
-    load("http://127.0.0.1:5500/pages/home.html", true);
+    load("home.html", true);
     history.pushState(null, null, "/home");
 }
 document.getElementById("blog").onclick = function () {
-    load("http://127.0.0.1:5500/pages/blog.html", true);
+    load("blog.html", true);
     GoBlogPage();
     history.pushState(null, null, "/blog");
 }
 document.getElementById("about").onclick = function () {
-    load("http://127.0.0.1:5500/pages/about.html", true);
+    load("about.html", true);
     history.pushState(null, null, "/about");
 }
 
