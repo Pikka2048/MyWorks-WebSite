@@ -1,12 +1,7 @@
 function load(filedir, abs = false) {
-    exit_blog_page();
+    QuitBlogPage();
+    abs ? url = filedir : url = "pages/" + filedir;
 
-    if (abs) {
-        url = filedir;
-    }
-    else {
-        url = "pages/" + filedir;
-    }
     var xhr = new XMLHttpRequest(),
         method = "GET",
         url;
@@ -23,14 +18,14 @@ function load(filedir, abs = false) {
 }
 
 //ブログから他ページに推移するときに呼び出すこと
-function exit_blog_page() {
+function QuitBlogPage() {
     var parent = document.getElementById('posts-list');
     while (parent.firstChild) {
         parent.removeChild(parent.firstChild);
     }
     parent.style.visibility = "hidden";
 }
-function blog_post(username, postdate, title, tags, id) {
+function CreateBlogPostElements(user, date, title, tags, id) {
     var parent = document.getElementById('posts-list');
 
     parent.style.visibility = "visible";
@@ -40,7 +35,7 @@ function blog_post(username, postdate, title, tags, id) {
     div.id = id;
     div.className = "post";
     div.onclick = function () {
-        exit_blog_page();
+        QuitBlogPage();
         page_id = this.id;
         load("post" + page_id + ".html");
         history.pushState(null, null, "blog/" + page_id);
@@ -49,29 +44,29 @@ function blog_post(username, postdate, title, tags, id) {
     parent.appendChild(div);
     parent = div;
 
-    var user = document.createElement('p');
-    user.textContent = username;
-    user.className = 'posts-meta'
+    var post_user = document.createElement('p');
+    post_user.textContent = user;
+    post_user.className = 'posts-meta'
 
-    var date = document.createElement('p');
-    date.textContent = postdate;
-    date.className = 'posts-meta'
+    var post_date = document.createElement('p');
+    post_date.textContent = date;
+    post_date.className = 'posts-meta'
 
-    var elem = document.createElement('h2');
-    elem.textContent = title;
+    var post_title = document.createElement('h2');
+    posttitle.textContent = title;
 
-    var tag = document.createElement('p');
-    tag.textContent = tags;
+    var post_tag = document.createElement('p');
+    post_tag.textContent = tags;
 
     // 要素を追加
-    parent.appendChild(user);
-    parent.appendChild(date);
-    parent.appendChild(elem);
-    parent.appendChild(tag);
+    parent.appendChild(post_user);
+    parent.appendChild(post_date);
+    parent.appendChild(post_title);
+    parent.appendChild(post_tag);
 }
-function blog_main() {
-    blog_post("@Pikka", "2021年7月31日", "React使ってみた", "React", 1);
-    blog_post("@Pikka", "2021年7月32日", "Vue使ってみた", "Vue", 2);
+function GoBlogPage() {
+    CreateBlogPostElements("@Pikka", "2021年7月31日", "React使ってみた", "React", 1);
+    CreateBlogPostElements("@Pikka", "2021年7月32日", "Vue使ってみた", "Vue", 2);
 }
 document.getElementById("home").onclick = function () {
     load("http://127.0.0.1:5500/pages/home.html", true);
@@ -79,7 +74,7 @@ document.getElementById("home").onclick = function () {
 }
 document.getElementById("blog").onclick = function () {
     load("http://127.0.0.1:5500/pages/blog.html", true);
-    blog_main();
+    GoBlogPage();
     history.pushState(null, null, "/blog");
 }
 document.getElementById("about").onclick = function () {
