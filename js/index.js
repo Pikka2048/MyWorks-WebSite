@@ -91,6 +91,7 @@ document.getElementById("about").onclick = function () {
     history.pushState(null, null, path + "/about");
 }
 
+
 window.onload = function () {
     if (location.hostname.match("github.io")) {
         console.log("run in github io");
@@ -101,5 +102,7 @@ window.onload = function () {
         root_path = "http://" + location.hostname + ":" + location.port;
         is_run_github = false;
     }
+    is_run_github ? path = "/7492WebSite" : path = "";
+    history.pushState(null, null, path + "/home");
     load("home.html");
 }
