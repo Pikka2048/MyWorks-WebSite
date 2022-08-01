@@ -53,7 +53,7 @@ function CreateBlogPostElements(user, date, title, tags, id) {
     post_date.className = 'posts-meta'
 
     var post_title = document.createElement('h2');
-    posttitle.textContent = title;
+    post_title.textContent = title;
 
     var post_tag = document.createElement('p');
     post_tag.textContent = tags;
