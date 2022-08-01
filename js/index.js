@@ -1,8 +1,15 @@
-function load(filedir) {
+function load(filedir, abs=false) {
     exit_blog_page();
+
+    if (abs) {
+        url = filedir;
+    }
+    else {
+        url = "pages/" + filedir;
+    }
     var xhr = new XMLHttpRequest(),
         method = "GET",
-        url = "pages/" + filedir;
+        url;
     var content = document.getElementById("content");
 
     xhr.open(method, url, true);
@@ -32,8 +39,10 @@ function blog_post(username, postdate, title, tags, id) {
     var div = document.createElement('div');
     div.id = id;
     div.className = "post";
-    div.onclick = function(){
-        alert(this.id);
+    div.onclick = function () {
+        exit_blog_page();
+        load("post1.html");
+        history.pushState(null, null, "blog/1");
     };
 
     parent.appendChild(div);
@@ -60,21 +69,21 @@ function blog_post(username, postdate, title, tags, id) {
     parent.appendChild(tag);
 }
 function blog_main() {
-    blog_post("@Pikka", "2021年7月31日", "React使ってみた", "React",1);
-    blog_post("@Pikka", "2021年7月32日", "Vue使ってみた", "Vue",2);
+    blog_post("@Pikka", "2021年7月31日", "React使ってみた", "React", 1);
+    blog_post("@Pikka", "2021年7月32日", "Vue使ってみた", "Vue", 2);
 }
 document.getElementById("home").onclick = function () {
-    load("home.html");
-    history.pushState(null, null, "home");
+    load("http://127.0.0.1:5500/pages/home.html", true);
+    history.pushState(null, null, "/home");
 }
 document.getElementById("blog").onclick = function () {
-    load("blog.html");
+    load("http://127.0.0.1:5500/pages/blog.html", true);
     blog_main();
-    history.pushState(null, null, "blog");
+    history.pushState(null, null, "/blog");
 }
 document.getElementById("about").onclick = function () {
-    load("about.html");
-    history.pushState(null, null, "about");
+    load("http://127.0.0.1:5500/pages/about.html", true);
+    history.pushState(null, null, "/about");
 }
 
 window.onload = function () {
