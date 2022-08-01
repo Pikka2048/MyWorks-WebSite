@@ -84,6 +84,7 @@ document.getElementById("blog").onclick = function () {
     is_run_github ? path = "/7492WebSite" : path = "";
     history.pushState(null, null, path + "/blog");
 }
+
 document.getElementById("about").onclick = function () {
     load("about.html", true);
     is_run_github ? path = "/7492WebSite" : path = "";
