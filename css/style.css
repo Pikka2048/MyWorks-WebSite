@@ -10,6 +10,44 @@ body {
         sans-serif;
 }
 
+h1 {
+    animation: change-color-anim 0.2s ease-in-out both;
+    position: relative;
+}
+
+@keyframes change-color-anim {
+
+    0% {
+        color: #000000;
+    }
+
+    100% {
+        color: #ffffff;
+        background-color: #39C1DB;
+        border-radius: 5px;
+        transform: scaleX(1.05);
+    }
+}
+
+h1:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-bottom: double 3px rgb(255, 255, 255);
+    animation: border_anim 1s linear forwards;
+}
+
+@keyframes border_anim {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
 a {
     text-decoration: none;
 }
