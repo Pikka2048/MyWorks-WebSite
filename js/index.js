@@ -70,8 +70,8 @@ function CreateBlogPostElements(user, date, title, tags, id) {
     parent.appendChild(post_tag);
 }
 function GoBlogPage() {
-    CreateBlogPostElements("@Pikka", "2021年7月31日", "React使ってみた", "React", 1);
-    CreateBlogPostElements("@Pikka", "2021年7月32日", "Vue使ってみた", "Vue", 2);
+    //CreateBlogPostElements("@Pikka", "2021年7月31日", "React使ってみた", "React", 1);
+    //CreateBlogPostElements("@Pikka", "2021年7月32日", "Vue使ってみた", "Vue", 2);
 }
 document.getElementById("home").onclick = function () {
     load("home.html", true);
