@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../React-GeimeiGeneretor"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "7492website"
+	}
+}
